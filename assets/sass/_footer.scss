@@ -1,0 +1,13 @@
+.footer {
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: $header_height;
+	line-height:$header_height;
+	text-align: center;
+	border-top:1px solid gray;
+}
+.footer_title {
+	font-size: 5rem;
+}

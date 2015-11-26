@@ -1,0 +1,16 @@
+//------------------------------------------------------------layout
+.header {
+	position: absolute;
+	width: 100%;
+	height: $header_height;
+	top: 0;
+	left: 0;
+	line-height:$header_height;
+	text-align: center;
+	border-bottom:1px solid gray;
+
+	@include z-index(header);
+}
+.header_title {
+	font-size: 5rem;
+}

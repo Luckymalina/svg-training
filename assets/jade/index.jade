@@ -1,0 +1,66 @@
+extends _layout
+include templates/_global_mixins
+include templates/_global_vars
+include templates/_project_mixins
+include templates/_project_vars
+block vars
+	- var array = {body_class:'', layuot_mod:'', sub_keywords:'',title_inner:'Title of the page'}
+block content_block
+	ul.articles_list
+		li.articles_item
+			article.article
+				h2.article_title Some title is here
+				.article_text
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				ul.soc_list
+					li.soc_item
+						a(href="#").soc_link
+							+icon('instagram','v1_mod')
+					li.soc_item
+						a(href="#").soc_link
+							+icon('facebook','v1_mod')
+					li.soc_item
+						a(href="#").soc_link
+							+icon('google','v1_mod')
+					li.soc_item
+						a(href="#").soc_link
+							+icon('rss','v1_mod')
+				label.check_label.v1_mod
+					span.check_text.v1_mod Click me
+					input(type="checkbox" checked).checkbox.v1_mod
+					svg.check_svg.v1_mod(viewbox='0 0 32 32')
+						path#path_1(fill="none" d="M27 4l-15 15-7-7-5 5 12 12 20-20z")
+		li.articles_item
+			article.article
+				h2.article_title Some title is here
+				.article_text
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				.field_w
+					+form_field('Input title','input',default_field_hidden,'placeholder text')
+					+icon('check_round','field_mod')
+		li.articles_item
+			article.article
+				h2.article_title Another icons in the bottom of article
+				.article_text
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					ul.soc_list
+						li.soc_item
+							a(href="#").soc_link
+								+icon('vk','v1_mod')
+						li.soc_item
+							a(href="#").soc_link
+								+icon('mail','v1_mod')
+						li.soc_item
+							a(href="#").soc_link
+								+icon('tool','v1_mod')
+						li.soc_item
+							a(href="#").soc_link
+								+icon('star','v1_mod')
+		li.articles_item
+			article.article
+				h2.article_title.icon_mod
+					+icon('padlock','v1_mod')
+					span Some title with icon
+				.article_text
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
