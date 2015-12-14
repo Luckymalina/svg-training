@@ -168,10 +168,6 @@ table {
   font-size: 64px;
   width: 1.03125em; }
 
-.icon-check_round {
-  font-size: 18px;
-  width: 1em; }
-
 .icon-connector {
   font-size: 80px;
   width: 1em; }
@@ -203,6 +199,10 @@ table {
 .icon-google {
   font-size: 96.827px;
   width: 1.00001em; }
+
+.icon-heart {
+  font-size: 37px;
+  width: 1.08108em; }
 
 .icon-info {
   font-size: 100px;
@@ -393,6 +393,16 @@ a {
   font-size: 2rem;
   margin: 0 1rem 0 0;
   fill: green; }
+
+.icon-burger {
+  font-size: 3rem; }
+  .icon-burger.green_mod {
+    fill: green; }
+
+.icon-check_round {
+  font-size: 3rem; }
+  .icon-check_round.red_mod {
+    fill: red; }
 
 .header {
   position: absolute;

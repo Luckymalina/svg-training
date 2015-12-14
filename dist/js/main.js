@@ -17,7 +17,7 @@ $(document).ready(function ($) {
 		path_length = path.getTotalLength();
 
 	//pageWidget(['index']);
-	getAllClasses('html','.elements_list');
+	getAllClasses('html', '.elements_list');
 });
 
 $(window).on('resize', function () {
